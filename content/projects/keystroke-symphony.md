@@ -35,4 +35,4 @@ Exploring the intersection of everyday computing and musical creativity. What if
 
 ---
 
-*Status: Production-ready*
+*Status: In development*

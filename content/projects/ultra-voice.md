@@ -76,4 +76,4 @@ YOU (Voice) → ORCHESTRATOR → Specialized Agents → Validation → Voice Out
 
 ---
 
-*Status: Production-ready • Built by multi-agent collaboration*
+*Status: Local prototype • Termux/Android only*

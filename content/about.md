@@ -17,8 +17,8 @@ Technology should adapt to humans, not the other way around. We build tools that
 **Privacy-first, compliance-built-in**
 COPPA-compliant from day one. Educational platforms designed with maximum protection for children. Local-first data. Transparency in every interaction.
 
-**Production over prototype**
-We don't ship demos. Every project listed here is production-ready, battle-tested code running in real environments.
+**Building in public**
+Experimental projects and prototypes. Some work locally, some are in active development. Honest status on each project page.
 
 ## Approach
 
@@ -34,7 +34,7 @@ We don't ship demos. Every project listed here is production-ready, battle-teste
 
 Built on Android/Termux. Orchestrated through multi-agent systems. Voice-controlled. Privacy-protected. Shipped.
 
-**Status**: All systems operational.
+**Status**: Experimental studio. Projects in various stages of development.
 
 ---
 

@@ -55,8 +55,8 @@ Drag-and-drop circuit construction with real-time simulation. Build circuits, se
 
 ## Access
 
-**Production Ready**: `http://127.0.0.1:8080/circuit_builder_enhanced.html`
+**Local development**: `http://127.0.0.1:8080/circuit_builder_enhanced.html`
 
 ---
 
-*Status: Production-ready • 7 modules • COPPA compliant*
+*Status: Local prototype • 7 modules • COPPA-focused design*
