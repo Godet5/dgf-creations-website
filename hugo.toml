@@ -1,0 +1,16 @@
+baseURL = 'https://dgf-creations.com/'
+languageCode = 'en-us'
+title = 'DGF-Creations | Creative Studio & Showcase'
+theme = 'dgf-custom'
+
+[params]
+  description = 'Experimental studio meets research notebook. Exploring human-speed creativity with AI collaboration.'
+  author = 'DGF-Creations'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
