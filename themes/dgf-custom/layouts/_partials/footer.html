@@ -1,1 +1,24 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<footer class="py-8 border-t border-white/5 mt-auto">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div class="text-xs text-secondary font-mono">
+            &copy; {{ now.Format "2006" }} DGF Creations.<br>
+            All systems nominal.
+        </div>
+
+        <!-- Feature: System Status -->
+        <div class="font-mono text-xs flex gap-4 bg-surface px-3 py-2 rounded border border-white/5">
+            <span class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-success rounded-full animate-pulse"></span>
+                LIVE
+            </span>
+            <span class="text-secondary border-l border-white/10 pl-4">
+                BUILD: {{ now.Format "2006-01-02 15:04" }}
+            </span>
+        </div>
+
+        <div class="flex gap-4">
+            <a href="#" class="text-secondary hover:text-accent transition-colors">GitHub</a>
+            <a href="#" class="text-secondary hover:text-accent transition-colors">Twitter</a>
+        </div>
+    </div>
+</footer>

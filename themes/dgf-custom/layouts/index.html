@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+<section class="hero mb-20 mt-10">
+    <div class="max-w-3xl">
+        <p class="font-mono text-accent mb-4 text-sm tracking-wider">:: SYSTEM READY</p>
+        <h1 class="text-5xl sm:text-7xl font-heading font-bold leading-tight mb-6">
+            Experimenting at <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-white">Human Speed.</span>
+        </h1>
+        <p class="text-xl text-secondary max-w-2xl leading-relaxed mb-8">
+            DGF Creations is a digital research notebook and creative studio.
+            Building intersections between AI collaboration and tangible interfaces.
+        </p>
+        <div class="flex gap-4">
+            <a href="#projects" class="btn btn-primary">View Experiments [J]</a>
+            <a href="/about" class="btn btn-outline">Read Logs</a>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="mb-20">
+    <div class="flex justify-between items-end mb-8 border-b border-white/10 pb-4">
+        <h2 class="text-3xl font-heading font-bold">Selected Works</h2>
+        <span class="font-mono text-xs text-secondary">INDEX: 01-06</span>
+    </div>
+
+    <!-- The Bento Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {{ range .Site.RegularPages.ByDate.Reverse }}
+            {{ if eq .Section "projects" }}
+                {{ partial "project-card.html" . }}
+            {{ end }}
+        {{ end }}
+    </div>
+</section>
+
+<section class="bg-surface p-8 rounded-lg border border-white/5">
+    <h2 class="text-2xl font-heading font-bold mb-4">Collaboration Inquiry</h2>
+    <p class="mb-6 text-secondary">Open for research partnerships and experimental prototyping.</p>
+
+    <!-- Semantic HTML Form (Netlify/Cloudflare compatible hooks can be added) -->
+    <form action="#" method="POST" class="grid grid-cols-1 gap-4 max-w-md">
+        <label class="block">
+            <span class="text-sm font-mono text-secondary">Identity</span>
+            <input type="text" class="form-input mt-1 block w-full bg-obsidian border border-white/20 p-2 focus:border-accent focus:outline-none" placeholder="Name">
+        </label>
+        <label class="block">
+            <span class="text-sm font-mono text-secondary">Transmission</span>
+            <input type="email" class="form-input mt-1 block w-full bg-obsidian border border-white/20 p-2 focus:border-accent focus:outline-none" placeholder="email@domain.com">
+        </label>
+        <button type="submit" class="btn btn-primary mt-2 w-full">Initialize Contact</button>
+    </form>
+</section>
+
+{{ end }}

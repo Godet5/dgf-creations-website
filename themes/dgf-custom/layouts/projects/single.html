@@ -1,0 +1,91 @@
+{{ define "main" }}
+
+<article class="project-container mt-8">
+
+    <!-- Project Header -->
+    <header class="mb-12 border-b border-white/10 pb-8">
+        <div class="font-mono text-accent text-sm mb-4">PROJECT ID: {{ .File.BaseFileName | upper }}</div>
+        <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6">{{ .Title }}</h1>
+        <p class="text-xl text-secondary leading-relaxed max-w-3xl">{{ .Params.description }}</p>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+        <!-- Main Content (Narrative) -->
+        <div class="lg:col-span-8 content prose prose-invert prose-lg max-w-none">
+            <!-- Main content injected here -->
+            {{ .Content }}
+
+            <!-- Technical Deep Dive Section -->
+            <div class="mt-12 border border-white/10 rounded bg-surface p-6">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-heading font-bold cursor-pointer list-none text-accent">
+                        <span>Technical Specifications</span>
+                        <span class="transition group-open:rotate-180">▼</span>
+                    </summary>
+                    <div class="text-sm text-secondary mt-4 font-mono grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {{ range .Params.tech_specs }}
+                        <div class="border-l border-white/10 pl-3">
+                            <span class="block text-white">{{ .label }}</span>
+                            {{ .value }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Sidebar (Meta Data & Sidenotes) -->
+        <aside class="lg:col-span-4 space-y-8">
+
+            <!-- Project Metadata -->
+            <div class="bg-surface p-6 border border-white/10 text-sm font-mono sticky top-8">
+                <h3 class="text-white border-b border-white/10 pb-2 mb-4 uppercase tracking-wider">Data Points</h3>
+
+                <div class="space-y-4 text-secondary">
+                    <div>
+                        <span class="block text-xs text-white/50 mb-1">CLIENT</span>
+                        {{ .Params.client }}
+                    </div>
+                    <div>
+                        <span class="block text-xs text-white/50 mb-1">ROLE</span>
+                        {{ .Params.role }}
+                    </div>
+                    <div>
+                        <span class="block text-xs text-white/50 mb-1">STACK</span>
+                        <ul class="list-none pl-0">
+                            {{ range .Params.stack }}
+                            <li>> {{ . }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    {{ if .Params.live_url }}
+                    <a href="{{ .Params.live_url }}" target="_blank" class="btn btn-outline w-full text-center mt-4 block">
+                        Launch Live Site ↗
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+
+            <!-- Sidenotes Container (JS will populate this from content) -->
+            <div id="sidenotes-container" class="hidden lg:block space-y-4">
+                <!-- Dynamic Content -->
+            </div>
+        </aside>
+    </div>
+</article>
+
+<!-- Navigation Footer -->
+<nav class="mt-20 flex justify-between border-t border-white/10 pt-8 font-mono text-sm">
+    {{ with .PrevInSection }}
+    <a href="{{ .RelPermalink }}" class="hover:text-accent">← {{ .Title }}</a>
+    {{ else }}
+    <span></span>
+    {{ end }}
+
+    {{ with .NextInSection }}
+    <a href="{{ .RelPermalink }}" class="hover:text-accent">{{ .Title }} →</a>
+    {{ end }}
+</nav>
+
+{{ end }}
