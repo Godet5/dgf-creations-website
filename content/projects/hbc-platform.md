@@ -77,4 +77,8 @@ Energetic, competitive, goal-oriented. Challenges, achievements, motivation.
 
 ---
 
-*Status: In development • Character system designed • COPPA-focused architecture*
+## Status
+
+**In development** – Q1 2026 beta launch
+**Current State**: Character system designed • COPPA-focused architecture • Framework ready
+**Progress**: Educational mentors implemented, age-adaptive UI in development
