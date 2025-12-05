@@ -16,3 +16,10 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Hugo modules workaround docs (reference only)
+HUGO_MODULES_IMPROVEMENT_PLAN.md
+QUICK_START_HUGO_MODULES.md
+TERMUX_HUGO_MODULES_WORKAROUND.md
+setup_modules.sh
+themes/dgf-custom/hugo-modules/

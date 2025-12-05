@@ -7,10 +7,57 @@ theme = 'dgf-custom'
   description = 'Experimental studio meets research notebook. Exploring human-speed creativity with AI collaboration.'
   author = 'DGF-Creations'
 
+# Search configuration
+[params.search]
+  enable = true
+  primary_color = "#ffb703"
+  include_sections = ["projects", "blog"]
+  include_all_sections = false
+  include_list_pages = true
+  show_image = true
+  show_description = true
+  show_tags = true
+  show_categories = false
+
+# Plugin assets
+[[params.plugins.css]]
+  link = "plugins/glightbox/glightbox.css"
+
+[[params.plugins.css]]
+  link = "plugins/swiper/swiper-bundle.css"
+
+[[params.plugins.js]]
+  link = "plugins/glightbox/glightbox.js"
+
+[[params.plugins.js]]
+  link = "plugins/swiper/swiper-bundle.js"
+
+[[params.plugins.js]]
+  link = "js/search.js"
+
+[[params.plugins.js]]
+  link = "js/accordion.js"
+
+[[params.plugins.js]]
+  link = "js/tab.js"
+
+[[params.plugins.js]]
+  link = "js/gallery-slider.js"
+
+[[params.plugins.js]]
+  link = "js/main.js"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
+# Search index output
 [outputs]
-  home = ['HTML', 'RSS', 'JSON']
+  home = ['HTML', 'RSS', 'JSON', 'SearchIndex']
+
+[outputFormats.SearchIndex]
+  mediaType = "application/json"
+  baseName = "searchindex"
+  isPlainText = true
+  notAlternative = true

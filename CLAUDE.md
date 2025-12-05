@@ -16,24 +16,59 @@ DGF-Creations official website - a Hugo static site showcasing creative projects
 
 ## Build & Development Commands
 
+**CRITICAL - Android/Termux Workaround**: Hugo requires `--noBuildLock` flag due to Android filesystem limitations.
+
+### Quick Commands (Use These)
+
+```bash
+# Build for production
+hbuild
+
+# Start dev server (localhost:1313)
+hserve
+
+# Clean build artifacts
+hclean
+```
+
+**Scripts Location**: `~/bin/hbuild`, `~/bin/hserve`, `~/bin/hclean`
+
 ### Production Build
 
 ```bash
-# Build site for production deployment
-hugo --minify
+# From any directory
+hbuild
+
+# Or manually:
+cd /storage/emulated/0/DGF-Creations/website
+hugo --minify --noBuildLock
 
 # Output directory: ./public/
 ```
 
-### Local Development (Not Supported on Android/Termux)
-
-Hugo's `hugo server` requires file watching which conflicts with Android/Termux file systems. For local development:
+### Local Development Server
 
 ```bash
-# Build only (no live reload)
-hugo
+# Start server
+hserve
 
-# View in browser: open ./public/index.html
+# Or manually:
+cd /storage/emulated/0/DGF-Creations/website
+hugo serve --bind 0.0.0.0 --noBuildLock
+
+# Access at: http://localhost:1313
+# Custom port: hserve 8080
+```
+
+### Clean Build Artifacts
+
+```bash
+# Clean public/, resources/, and lock files
+hclean
+
+# Or manually:
+cd /storage/emulated/0/DGF-Creations/website
+rm -rf public resources .hugo_build.lock
 ```
 
 ### Deployment
@@ -314,6 +349,11 @@ ls -la public/demos/
 
 ### Common Issues
 
+**"failed to acquire a build lock" error**:
+- **Cause**: Android filesystem doesn't support file locking
+- **Fix**: ALWAYS use `--noBuildLock` flag or use `hbuild`/`hserve` commands
+- **Never use**: Plain `hugo` or `hugo serve` without the flag
+
 **Build fails with "failed to extract shortcode"**:
 - Check for unclosed shortcodes in markdown files
 - Ensure custom shortcodes exist in `themes/dgf-custom/layouts/shortcodes/`
@@ -324,8 +364,8 @@ ls -la public/demos/
 - Use `{{ .Site.BaseURL }}` for absolute URLs in templates
 
 **Theme changes not appearing**:
-- Clear Hugo cache: `rm -rf resources/_gen/`
-- Rebuild: `hugo --minify`
+- Clear Hugo cache: `hclean` or `rm -rf resources/_gen/`
+- Rebuild: `hbuild`
 
 ---
 
