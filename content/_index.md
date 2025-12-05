@@ -33,7 +33,7 @@ We build **systems**, not just demos:
 
 *Production-ready systems you can adapt, extend, or learn from.*
 
-### Keystroke Symphony 🎹
+### Keystroke Symphony
 
 Real-time **keyboard-to-music** synthesis engine that turns typing into sound.
 
@@ -46,7 +46,7 @@ Real-time **keyboard-to-music** synthesis engine that turns typing into sound.
 
 ---
 
-### ULTRA Voice System 🎙️
+### ULTRA Voice System
 
 Voice-controlled **autonomous development team** – not just chat, a multi-agent dev platform.
 
@@ -58,7 +58,7 @@ Voice-controlled **autonomous development team** – not just chat, a multi-agen
 
 ---
 
-### Circuit Builder ⚡
+### Circuit Builder
 
 Interactive **electronics learning platform** with modular ES6+ architecture.
 
@@ -70,7 +70,7 @@ Interactive **electronics learning platform** with modular ES6+ architecture.
 
 ---
 
-### HBC Educational Platform 🎓
+### HBC Educational Platform
 
 Character-driven AI tutor system with **age-adaptive interfaces** (ages 5–19+).
 
@@ -82,7 +82,7 @@ Character-driven AI tutor system with **age-adaptive interfaces** (ages 5–19+)
 
 ---
 
-### Custom Projects & Consulting 🔧
+### Custom Projects and Consulting
 
 We partner on:
 
@@ -97,13 +97,13 @@ We partner on:
 
 ## Who We Build For
 
-### For Educators & Learning Teams 🎓
+### For Educators and Learning Teams
 
 - COPPA-compliant from day one
 - Character-driven learning that kids actually enjoy
 - Transparent, configurable behavior – no black-box "edutainment"
 
-### For Builders & Researchers 🔬
+### For Builders and Researchers
 
 - Real code, real constraints, real deployments
 - Multi-agent orchestration, local-first tooling, voice control
@@ -119,7 +119,7 @@ We're an experimental studio obsessed with **tools that amplify human creativity
 
 - Human-speed creativity with AI collaboration
 - Privacy-first, data-minimal from the start
-- Comfortable living where 🚧 prototypes and production systems overlap
+- Comfortable living where prototypes and production systems overlap
 
 If you're building something that doesn't fit neatly into a box — especially in education, music, or human-computer interaction — we probably want to see it.
 

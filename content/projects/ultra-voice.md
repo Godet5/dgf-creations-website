@@ -6,7 +6,7 @@ tags: ["ai", "voice", "automation", "agents"]
 weight: 2
 ---
 
-# ULTRA Voice System 🎙️
+# ULTRA Voice System
 
 **Voice-controlled autonomous development team - Not just voice chat, a complete multi-agent development platform**
 

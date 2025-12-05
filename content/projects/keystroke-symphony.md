@@ -6,7 +6,7 @@ tags: ["music", "creative-tools", "python"]
 weight: 1
 ---
 
-# Keystroke Symphony 🎵
+# Keystroke Symphony
 
 **Real-time keyboard-to-music synthesis engine with multi-platform support and creative features**
 

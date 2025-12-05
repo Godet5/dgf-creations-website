@@ -6,7 +6,7 @@ tags: ["education", "ai", "personalization", "coppa"]
 weight: 5
 ---
 
-# HBC Educational Platform 🎭
+# HBC Educational Platform
 
 **Character-driven AI tutoring system with age-adaptive interfaces - personalized education for ages 5-19+**
 
@@ -16,22 +16,22 @@ Six AI mentor characters, each with distinct personalities and specializations, 
 
 ## The Mentors
 
-**Pugly** 🧸 - Friendly Support (Ages 5-9)
+**Pugly** - Friendly Support (Ages 5-9)
 Encouraging, patient, playful. Confidence building and basic concepts.
 
-**Sallie** 📚 - Academic Excellence (Ages 10-13)
+**Sallie** - Academic Excellence (Ages 10-13)
 Organized, systematic, achievement-focused. Study skills and academic planning.
 
-**Pablo** 🎨 - Creative Learning (Ages 11-16)
+**Pablo** - Creative Learning (Ages 11-16)
 Artistic, innovative, explorative. Creative problem-solving and design thinking.
 
-**Tortellini** ⚙️ - Technical Skills (Ages 14-18)
+**Tortellini** - Technical Skills (Ages 14-18)
 Logical, precise, technically-minded. STEM education, coding, engineering.
 
-**Martha** 🌟 - Life Skills (Ages 16+)
+**Martha** - Life Skills (Ages 16+)
 Practical, nurturing, wise. Life skills, career guidance, professional development.
 
-**Red** 🏆 - Achievement Coach (All Ages)
+**Red** - Achievement Coach (All Ages)
 Energetic, competitive, goal-oriented. Challenges, achievements, motivation.
 
 ## Age-Adaptive Design

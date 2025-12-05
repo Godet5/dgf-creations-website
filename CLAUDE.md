@@ -143,12 +143,12 @@ Create shortcode in `themes/dgf-custom/layouts/shortcodes/keystroke-demo.html`:
 
 The site showcases 6 diverse projects:
 
-1. **Keystroke Symphony** 🎵 - Session map-up at human speed (30 sec) - agent responses become music
-2. **ULTRA Voice System** 🎙️ - Voice interaction with Claude
-3. **Brain System** 🧠 - Knowledge graph-based persistent memory
-4. **Nelson Solar Plan** ☀️ - Custom solar system design
-5. **Circuit Builder** ⚡ - Educational electronics platform
-6. **HBC Platform** 🎯 - Habit Builder Challenge app
+1. **Keystroke Symphony** - Session map-up at human speed (30 sec) - agent responses become music
+2. **ULTRA Voice System** - Voice interaction with Claude
+3. **Brain System** - Knowledge graph-based persistent memory
+4. **Nelson Solar Plan** - Custom solar system design
+5. **Circuit Builder** - Educational electronics platform
+6. **HBC Platform** - Habit Builder Challenge app
 
 Project content lives in `content/projects/` with individual markdown files.
 

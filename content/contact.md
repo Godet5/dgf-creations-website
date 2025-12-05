@@ -13,24 +13,24 @@ We're open to partnerships that align with our philosophy: privacy-first design,
 
 ## What We Take On
 
-### Educational Partnerships 🎓
+### Educational Partnerships
 - COPPA-compliant learning platform development
 - Character-driven AI tutor integration
 - Age-adaptive interface design
 - Privacy-by-design architecture consulting
 
-### Technical Consulting 🔧
+### Technical Consulting
 - Multi-agent system architecture
 - Voice interface development
 - Real-time audio/visual synthesis engines
 - Educational compliance frameworks (COPPA/FERPA/GDPR)
 
-### Custom Platform Development 💻
+### Custom Platform Development
 - Experimental prototypes that need production polish
 - "Weird but important" ideas that don't fit existing frameworks
 - Integration of AI tools into specialized workflows
 
-### Research Collaboration 🔬
+### Research Collaboration
 - Open to academic partnerships in HCI, education technology, and AI-assisted creativity
 - Co-authoring technical documentation and case studies
 - Contributing to open-source educational tools

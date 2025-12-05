@@ -6,7 +6,7 @@ tags: ["education", "stem", "electronics", "games"]
 weight: 4
 ---
 
-# Circuit Builder ⚡
+# Circuit Builder
 
 **Interactive electronics learning platform with modular ES6+ architecture - hands-on STEM education through gamified circuit design**
 

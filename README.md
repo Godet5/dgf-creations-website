@@ -42,12 +42,12 @@ website/
 
 ## Featured Projects
 
-1. Keystroke Symphony 🎵
-2. ULTRA Voice System 🎙️
-3. Brain System 🧠
-4. Nelson Solar Plan ☀️
-5. Circuit Builder ⚡
-6. HBC Platform 🎯
+1. Keystroke Symphony
+2. ULTRA Voice System
+3. Brain System
+4. Nelson Solar Plan
+5. Circuit Builder
+6. HBC Platform
 
 ## Design
 
