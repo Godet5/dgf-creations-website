@@ -1,13 +1,15 @@
 ---
-title: "DGF-Creations – Creative AI Studio & Experimental Lab"
-description: "Experimental studio building AI-powered educational platforms, creative tools, and custom multi-agent systems with privacy-first design."
+title: "DGF-Creations – Production Web Apps & AI Platforms"
+description: "Full-stack web applications, AI-powered educational platforms, and custom development tools. React, TypeScript, Supabase. Live client work."
 ---
 
 # DGF-Creations
 
-**Experimental studio meets research notebook.**
+**Production-ready platforms for education, creative tools, and custom business applications.**
 
-We design **AI-powered educational platforms** and **creative tools** that feel like play, respect privacy, and actually ship.
+We build **AI-powered educational systems**, **web applications**, and **creative development tools** — from architecture to deployment.
+
+> Currently serving clients in mobile service businesses, educational platforms, and R&D teams.
 
 ---
 
@@ -21,11 +23,32 @@ We build **systems**, not just demos:
 - **Creative Tools & Engines**
   Keystroke music, voice-driven dev agents, visual discovery interfaces.
 
-- **Custom R&D & Consulting**
-  Multi-agent architectures, learning experience design, and technical deep dives.
+- **Custom Web Applications**
+  Full-stack business platforms with payments, client portals, and automated workflows.
 
 > **Philosophy**: Technology should adapt to humans, not the other way around.
 > Privacy-first. COPPA-compliant. Built for real people solving real problems.
+
+---
+
+## Recent Client Work
+
+### Mobile Service Business Platform
+
+**Client**: Mike's Mobile Welding & Handyman Service
+**Delivered**: Full-stack web platform with React, TypeScript, Supabase, Stripe integration
+**Live**: [miketune.dgf-creations.com](https://miketune.dgf-creations.com)
+
+**What we built**:
+- Professional responsive website (mobile-first design)
+- Client portal architecture (accounts, payments, project tracking)
+- Automated CI/CD pipeline (GitHub Actions → Cloudflare Pages)
+- Production database design with Row-Level Security
+- Stripe payment integration and automated invoicing
+
+**Technical stack**: React 19, TypeScript 5.8, Supabase, Cloudflare Pages, GitHub Actions
+
+[View full case study →](/projects/miketune-business-platform)
 
 ---
 
@@ -84,14 +107,14 @@ Character-driven AI tutor system with **age-adaptive interfaces** (ages 5–19+)
 
 ### Custom Projects and Consulting
 
-We partner on:
+**Work with us on**:
 
+- Full-stack web applications (React, TypeScript, Supabase, Stripe)
 - AI platform architecture & multi-agent systems
-- Voice interfaces & assistive tools
 - Educational compliance frameworks (COPPA/FERPA)
-- Specialized engineering for "weird but important" ideas
+- Voice interfaces & creative development tools
 
-[Talk about a project →](/contact)
+**[Start a project →](/contact)** or email hello@dgf-creations.com
 
 ---
 
