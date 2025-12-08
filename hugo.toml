@@ -1,10 +1,10 @@
 baseURL = 'https://dgf-creations.com/'
 languageCode = 'en-us'
-title = 'DGF-Creations | Creative Studio & Showcase'
+title = 'DGF-Creations – Production Web Apps & AI Platforms'
 theme = 'dgf-custom'
 
 [params]
-  description = 'Experimental studio meets research notebook. Exploring human-speed creativity with AI collaboration.'
+  description = 'Full-stack web applications, AI-powered educational platforms, and custom development tools. React, TypeScript, Supabase. Live client work.'
   author = 'DGF-Creations'
 
 # Search configuration
@@ -54,7 +54,13 @@ theme = 'dgf-custom'
 
 # Search index output
 [outputs]
-  home = ['HTML', 'RSS', 'JSON', 'SearchIndex']
+  home = ['HTML', 'RSS', 'JSON', 'SearchIndex', 'SITEMAP']
+
+# Sitemap configuration
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
 
 [outputFormats.SearchIndex]
   mediaType = "application/json"

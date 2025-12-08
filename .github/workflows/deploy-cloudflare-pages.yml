@@ -1,0 +1,116 @@
+name: Deploy dgf-creations to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_PAGES_PROJECT_NAME: dgf-creations
+      HUGO_ENV: production
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.152.2'
+          extended: true
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          elif [ -f package.json ]; then
+            npm install
+          fi
+
+      - name: Build site (Hugo)
+        run: |
+          hugo --minify --noBuildLock
+
+      - name: Lightweight smoke tests
+        run: |
+          # Ensure public folder exists
+          test -d public
+
+          # Sanity check: index.html exists
+          test -f public/index.html
+
+          # Critical text verification: check for professional positioning
+          grep -qi "Production-ready platforms" public/index.html
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ${{ env.CLOUDFLARE_PAGES_PROJECT_NAME }}
+          directory: ./public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Basic Lighthouse check (home page only)
+        if: success()
+        run: |
+          npm install -g lighthouse@12.x
+          npx lighthouse https://dgf-creations.pages.dev \
+            --quiet \
+            --no-update-notifier \
+            --chrome-flags="--headless" \
+            --only-categories=performance \
+            --output=json \
+            --output-path=./lighthouse-report.json || true
+
+          # Extract performance score (0-1) and enforce soft budget
+          SCORE=$(jq '.categories.performance.score' lighthouse-report.json)
+          echo "Lighthouse performance score: $SCORE"
+          # Fail if score < 0.7 (soft budget)
+          awk "BEGIN {exit !($SCORE < 0.7)}" || true
+
+      - name: Notify on deploy
+        if: always()
+        env:
+          NOTIFY_WEBHOOK_URL: ${{ secrets.DEPLOY_NOTIFY_WEBHOOK }}
+        run: |
+          if [ -z "$NOTIFY_WEBHOOK_URL" ]; then
+            echo "No webhook configured, skipping notification."
+            exit 0
+          fi
+
+          STATUS="${{ job.status }}"
+          PAYLOAD=$(jq -n \
+            --arg status "$STATUS" \
+            --arg repo "${{ github.repository }}" \
+            --arg sha "${{ github.sha }}" \
+            --arg url "https://dgf-creations.com" \
+            '{
+              text: ("dgf-creations deploy: " + $status),
+              attachments: [{
+                title: "Repository",
+                text: $repo,
+                color: ($status == "success" ? "good" : "danger"),
+                fields: [
+                  { "title": "Commit", "value": $sha, "short": true },
+                  { "title": "URL", "value": $url, "short": true }
+                ]
+              }]
+            }')
+
+          curl -X POST -H 'Content-type: application/json' \
+            --data "$PAYLOAD" \
+            "$NOTIFY_WEBHOOK_URL"

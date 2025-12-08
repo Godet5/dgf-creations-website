@@ -1,0 +1,13 @@
+# Canonical domain: force www → root
+https://www.dgf-creations.com/* https://dgf-creations.com/:splat 301!
+
+# Legacy Pages fallback → primary domain
+https://dgf-creations.pages.dev/* https://dgf-creations.com/:splat 301!
+
+# MikeTune separation: keep his under his own Pages project
+# (Uncomment when miketune has dedicated Pages deployment)
+# https://miketune.dgf-creations.com/* https://miketune.pages.dev/:splat 301!
+
+# Example of future old-path migrations
+# /old-services/* /services/:splat 301
+# /blog/* /articles/:splat 301

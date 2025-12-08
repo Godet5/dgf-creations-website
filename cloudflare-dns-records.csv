@@ -1,0 +1,7 @@
+Type,Name,Content,Proxy,TTL,Priority
+A,@,172.67.138.76,true,auto,
+A,@,104.21.46.117,true,auto,
+CNAME,www,dgf-creations.pages.dev,true,auto,
+CNAME,miketune,miketune.pages.dev,true,auto,
+CNAME,dev,dgf-creations-dev.pages.dev,true,auto,
+TXT,@,"v=spf1 include:_spf.mx.cloudflare.net ~all",,auto,
