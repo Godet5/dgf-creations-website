@@ -62,7 +62,7 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: ${{ env.CLOUDFLARE_PAGES_PROJECT_NAME }}
           directory: ./public
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          # gitHubToken removed - requires deployments:write permission
 
       - name: Basic Lighthouse check (home page only)
         if: success()
