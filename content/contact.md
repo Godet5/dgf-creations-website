@@ -1,55 +1,51 @@
 ---
-title: "Contact & Collaboration"
-description: "Get in touch with DGF-Creations for custom projects, educational partnerships, or technical collaboration."
+title: "Contact"
+description: "Get in touch for infrastructure planning, educational platforms, or systems that need to function under constraint."
 ---
 
-# Work With Us
+# Contact
 
-Interested in collaborating on **educational platforms**, **AI-powered tools**, or **custom technical projects**?
+Interested in working together on **infrastructure planning**, **educational platforms**, or **systems that need to function under constraint**?
 
-We're open to partnerships that align with our philosophy: privacy-first design, thoughtful application of AI, and tools that actually ship.
+I take on projects that align with my operating principles: consent-first design, local-first function, and systems built for endurance rather than attention.
 
 ---
 
-## What We Take On
+## What I Take On
 
-### Educational Partnerships
-- COPPA-compliant learning platform development
-- Character-driven AI tutor integration
+### Infrastructure Planning
+- Off-grid energy system design and analysis
+- Constraint-driven technical specifications
+- Code compliance documentation (NEC, Title 24)
+- Multi-tier budget analysis with transparent tradeoffs
+
+### Educational Platforms
+- COPPA-compliant learning system architecture
+- Privacy-by-design data governance
 - Age-adaptive interface design
-- Privacy-by-design architecture consulting
+- Consent-embedded system structures
 
 ### Technical Consulting
-- Multi-agent system architecture
-- Voice interface development
-- Real-time audio/visual synthesis engines
-- Educational compliance frameworks (COPPA/FERPA/GDPR)
-
-### Custom Platform Development
-- Experimental prototypes that need production polish
-- "Weird but important" ideas that don't fit existing frameworks
-- Integration of AI tools into specialized workflows
-
-### Research Collaboration
-- Open to academic partnerships in HCI, education technology, and AI-assisted creativity
-- Co-authoring technical documentation and case studies
-- Contributing to open-source educational tools
+- Multi-agent coordination and governance design
+- Documentation systems and specification architecture
+- Local-first system design
+- Resilient infrastructure planning
 
 ---
 
-## What We're Looking For
+## Good Fit
 
-**Good fit**:
-- Projects with clear educational or creative impact
-- Teams that value privacy, transparency, and thoughtful design
-- Problems that require custom solutions (not just off-the-shelf integrations)
+- Projects with clear constraints and measurable outcomes
+- Work that requires clarity over complexity
 - Long-term partnerships over one-off builds
+- Problems where endurance matters more than speed
 
-**Not a fit**:
-- Generic chatbot implementations
-- Projects requiring collection of children's PII
-- "Move fast and break things" approaches to education
+## Not a Fit
+
+- "Move fast and break things" approaches
+- Projects requiring collection of children's PII without consent architecture
 - Marketing-first / technology-second initiatives
+- Work that cannot be documented or governed
 
 ---
 
@@ -59,45 +55,27 @@ We're open to partnerships that align with our philosophy: privacy-first design,
 
 **Response time**: Typically within 2-3 business days
 
-**Location**: Remote-first (based in US, work globally)
-
 ---
 
 ## Before You Reach Out
 
-To help us respond quickly and effectively:
+To help me respond effectively:
 
 1. **What you're building**: Brief description (2-3 sentences)
-2. **Your timeline**: When do you need this completed?
-3. **Your audience**: Who will use this? (age range, context)
-4. **Compliance needs**: Any COPPA, FERPA, or accessibility requirements?
-5. **Technical constraints**: Existing stack, platforms, integrations
+2. **Your constraints**: Budget, timeline, compliance requirements
+3. **Your audience**: Who will rely on this system?
+4. **What success looks like**: How will you know it worked?
 
 ---
 
 ## Current Availability
 
-**Q4 2025 - Q1 2026**: Limited capacity (DGF platform launches in progress)
+**Q1 2026**: Limited capacity (platform launches in progress)
 
-**Q2 2026**: Open for new partnerships
+**Q2 2026**: Open for new projects
 
-**Ongoing**: Educational consulting and technical advisory (flexible commitment)
-
----
-
-## Featured Past Work
-
-### Solar Energy Systems Analysis
-Comprehensive technical planning for renewable energy installations. Recent deliverable: detailed specifications and cost analysis for residential off-grid solar system with battery backup and generator integration.
-
-### Multi-Agent Development Platform (ULTRA Voice)
-Voice-controlled autonomous development team with orchestrated agent coordination, real-time synthesis, and compliance-aware task routing.
-
-### Character-Driven Learning Systems (HBC Platform)
-Six AI mentor characters with distinct personalities, age-adaptive interfaces for 5-19+, and privacy-by-design architecture.
+**Ongoing**: Technical consulting and infrastructure planning (flexible commitment)
 
 ---
 
-*Looking forward to building something meaningful together.*
-
-[← Back to Home](/)
+[About →](/about) | [How I Work →](/how-i-work) | [Case Studies →](/case-studies)

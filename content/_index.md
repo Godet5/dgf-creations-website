@@ -1,153 +1,80 @@
 ---
-title: "DGF-Creations – Production Web Apps & AI Platforms"
-description: "Full-stack web applications, AI-powered educational platforms, and custom development tools. React, TypeScript, Supabase. Live client work."
+title: "Sierra Cole / De Gode Fem LLC"
+description: "Builder of resilient systems — planning and creation studio pairing human judgment with adaptive tools"
 ---
 
-# DGF-Creations
+# Sierra Cole
 
-**Production-ready platforms for education, creative tools, and custom business applications.**
+**Builder of Resilient Systems**
 
-We build **AI-powered educational systems**, **web applications**, and **creative development tools** — from architecture to deployment.
+I pair human judgment with adaptive tools to produce practical, durable systems. My work spans educational platforms, off-grid infrastructure planning, and privacy-respecting technology design — projects united by a focus on consent, local-first function, and long-term resilience.
 
-> Currently serving clients in mobile service businesses, educational platforms, and R&D teams.
-
----
-
-## What We Do
-
-We build **systems**, not just demos:
-
-- **Educational Platforms**
-  Character-driven tutor systems, COPPA-first design, playful STEM learning worlds.
-
-- **Creative Tools & Engines**
-  Keystroke music, voice-driven dev agents, visual discovery interfaces.
-
-- **Custom Web Applications**
-  Full-stack business platforms with payments, client portals, and automated workflows.
-
-> **Philosophy**: Technology should adapt to humans, not the other way around.
-> Privacy-first. COPPA-compliant. Built for real people solving real problems.
+> "A system that only works under perfect conditions is a liability."
 
 ---
 
-## Recent Client Work
+## Focus Areas
 
-### Mobile Service Business Platform
+### Systems Design
+Architecture and infrastructure that remains legible and maintainable. Documentation that serves the people who rely on the system, not just the people who built it.
 
-**Client**: Mike's Mobile Welding & Handyman Service
-**Delivered**: Full-stack web platform with React, TypeScript, Supabase, Stripe integration
-**Live**: [miketune.dgf-creations.com](https://miketune.dgf-creations.com)
+### Education & Habit Formation
+Platforms designed for consent, privacy, and long-term engagement. COPPA-compliant from day one. Built for children and families who deserve protection, not extraction.
 
-**What we built**:
-- Professional responsive website (mobile-first design)
-- Client portal architecture (accounts, payments, project tracking)
-- Automated CI/CD pipeline (GitHub Actions → Cloudflare Pages)
-- Production database design with Row-Level Security
-- Stripe payment integration and automated invoicing
+### Resilient Infrastructure
+Off-grid planning, local-first design, constraint-driven engineering. Systems that function when connectivity fails, institutions disappear, or abundance is absent.
 
-**Technical stack**: React 19, TypeScript 5.8, Supabase, Cloudflare Pages, GitHub Actions
+---
 
-[View full case study →](/projects/miketune-business-platform)
+## Recent Work
+
+### Off-Grid Solar System Design
+Complete technical planning for residential off-grid installation. Three budget tiers, 337 pages of documentation, explicit DIY vs. licensed-electrician boundaries. Constraint-driven. Legible.
+
+[View case study →](/case-studies/offgrid-solar)
+
+### Client Portfolio Platform
+Full-stack web platform for mobile service business. React, TypeScript, Supabase, Stripe integration. Live at [miketune.dgf-creations.com](https://miketune.dgf-creations.com).
+
+[View project →](/projects/miketune-business-platform)
 
 ---
 
 ## Featured Platforms
 
-*Production-ready systems you can adapt, extend, or learn from.*
-
 ### Keystroke Symphony
-
-Real-time **keyboard-to-music** synthesis engine that turns typing into sound.
-
-- Zero-latency audio (NumPy + sounddevice)
-- Dynamic tempo & pitch control
-- Recording & playback of entire typing sessions
-- Works on desktop & mobile (Termux)
+Real-time keyboard-to-music synthesis engine. Zero-latency audio, recording and playback, works on desktop and mobile.
 
 [View project →](/projects/keystroke-symphony)
 
----
-
-### ULTRA Voice System
-
-Voice-controlled **autonomous development team** – not just chat, a multi-agent dev platform.
-
-- Speak a goal → orchestrator spawns specialized agents
-- Agents collaborate via specs and validation passes
-- Results summarized back to you in natural voice
-
-[View project →](/projects/ultra-voice)
-
----
-
 ### Circuit Builder
-
-Interactive **electronics learning platform** with modular ES6+ architecture.
-
-- Drag-and-drop circuit design with real-time simulation
-- Progression from **LEDs & batteries** to **logic gates & PCB design**
-- Designed for ages 8–17+ with clear learning pathways
+Interactive electronics learning platform. Drag-and-drop circuit design with real-time simulation. Designed for ages 8-17+.
 
 [View project →](/projects/circuit-builder)
 
----
-
 ### HBC Educational Platform
-
-Character-driven AI tutor system with **age-adaptive interfaces** (ages 5–19+).
-
-- Six mentor characters with distinct personalities
-- **Pugly** (ages 5–9): playful, confidence-building guide
-- Structured learning journeys with compliance built in
+Character-driven AI tutor system with age-adaptive interfaces. Six mentor characters, structured learning journeys, compliance built in.
 
 [View project →](/projects/hbc-platform)
 
 ---
 
-### Custom Projects and Consulting
+## How I Work
 
-**Work with us on**:
+I work as a single operator in deliberate collaboration with AI tools. The judgment is mine. The capability is extended.
 
-- Full-stack web applications (React, TypeScript, Supabase, Stripe)
-- AI platform architecture & multi-agent systems
-- Educational compliance frameworks (COPPA/FERPA)
-- Voice interfaces & creative development tools
+My operating principles: **Clarity over complexity. Endurance over speed. Human agency first. Consent is structural. Local-first design. Quiet work.**
 
-**[Start a project →](/contact)** or email hello@dgf-creations.com
+[Read more →](/how-i-work) | [See values in action →](/case-studies)
 
 ---
 
-## Who We Build For
+## Contact
 
-### For Educators and Learning Teams
+Interested in working together on infrastructure planning, educational platforms, or systems that need to function under constraint?
 
-- COPPA-compliant from day one
-- Character-driven learning that kids actually enjoy
-- Transparent, configurable behavior – no black-box "edutainment"
-
-### For Builders and Researchers
-
-- Real code, real constraints, real deployments
-- Multi-agent orchestration, local-first tooling, voice control
-- Open to collaboration on experimental platforms
-
-[See technical deep dives →](/journal)
+[Start a conversation →](/contact)
 
 ---
 
-## About DGF-Creations
-
-We're an experimental studio obsessed with **tools that amplify human creativity and learning**.
-
-- Human-speed creativity with AI collaboration
-- Privacy-first, data-minimal from the start
-- Comfortable living where prototypes and production systems overlap
-
-If you're building something that doesn't fit neatly into a box — especially in education, music, or human-computer interaction — we probably want to see it.
-
-[Contact DGF →](/contact)
-
----
-
-*© 2025 DGF-Creations • All systems nominal.*
+*De Gode Fem LLC — Planning and creation studio. Built for endurance.*

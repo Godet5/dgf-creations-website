@@ -1,41 +1,38 @@
 ---
-title: "About DGF-Creations"
-description: "Experimental studio building AI-powered tools at human speed"
+title: "About"
+description: "Sierra Cole — Builder of resilient systems"
 ---
 
-# About DGF-Creations
+# About
 
-**Experimental studio meets research notebook.**
+Sierra Cole is the founder of **De Gode Fem LLC**, a planning and creation studio that pairs human judgment with adaptive tools to produce practical, durable systems.
 
-We build systems that amplify human creativity and learning through thoughtful application of AI. Not flashy demos - production-ready platforms solving real problems.
+Her work includes educational platforms, off-grid infrastructure planning, and privacy-respecting technology design — projects united by a focus on consent, local-first function, and long-term resilience.
 
-## Philosophy
+Sierra builds for constraint: her systems are designed to work when resources are limited, connectivity is unreliable, and institutional support is absent. She documents rigorously, designs for legibility, and measures success by endurance rather than attention.
 
-**Human-speed creativity with AI collaboration**
-Technology should adapt to humans, not the other way around. We build tools that respect attention, privacy, and the messy reality of how people actually work.
+---
 
-**Privacy-first, compliance-built-in**
-COPPA-compliant from day one. Educational platforms designed with maximum protection for children. Local-first data. Transparency in every interaction.
+## Founder Statement
 
-**Building in public**
-Experimental projects and prototypes. Some work locally, some are in active development. Honest status on each project page.
+I build systems because I've seen what happens when they fail.
 
-## Approach
+My work comes from proximity to constraint — limited resources, rural infrastructure gaps, situations where things needed to function even when conditions weren't ideal. I learned that a system which only works under perfect circumstances isn't a system. It's a liability waiting to be called.
 
-**Keystroke Symphony** explores the intersection of everyday computing and musical creativity.
+Through De Gode Fem, I focus on pairing tools with human judgment rather than replacing it. I care about clarity, consent, and endurance. I build things meant to function when attention is low, time is short, and support is thin.
 
-**ULTRA Voice** proves multi-agent development can work hands-free on a phone.
+I'm not interested in innovation that performs. I'm interested in work that reduces harm, expands agency, and keeps functioning in the background of real lives. If it lasts and protects people, it's doing its job.
 
-**Circuit Builder** makes electronics education accessible through play, not lectures.
-
-**HBC Platform** demonstrates that AI tutoring can be personal without being invasive.
+---
 
 ## The Work
 
-Built on Android/Termux. Orchestrated through multi-agent systems. Voice-controlled. Privacy-protected. Shipped.
+**Focus areas:**
 
-**Status**: Experimental studio. Projects in various stages of development.
+- **Systems Design** — Architecture and infrastructure that remains legible and maintainable
+- **Education & Habit Formation** — Platforms designed for consent, privacy, and long-term engagement
+- **Resilient Infrastructure** — Off-grid planning, local-first design, constraint-driven engineering
 
 ---
 
-*Open source where possible. Privacy-first always. Built by De Gode Fem LLC.*
+[How I Work →](/how-i-work) | [Case Studies →](/case-studies) | [Contact →](/contact)
