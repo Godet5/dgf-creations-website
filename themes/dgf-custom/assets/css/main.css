@@ -426,6 +426,108 @@ details summary::-webkit-details-marker {
     transform: rotate(180deg);
 }
 
+/* --- HOMEPAGE CONTENT --- */
+.homepage-content {
+    max-width: 72ch;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.homepage-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.homepage-content h2 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.homepage-content h3 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-accent);
+}
+
+.homepage-content p {
+    margin-bottom: 1.25rem;
+    line-height: 1.7;
+}
+
+.homepage-content blockquote {
+    border-left: 3px solid var(--color-accent);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+}
+
+.homepage-content ul, .homepage-content ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.homepage-content li {
+    margin-bottom: 0.5rem;
+}
+
+.homepage-content a {
+    color: var(--color-accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.homepage-content a:hover {
+    border-bottom-color: var(--color-accent);
+}
+
+.homepage-content hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 2.5rem 0;
+}
+
+.homepage-content strong {
+    color: white;
+}
+
+/* --- TABLES --- */
+.homepage-content table,
+.prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+.homepage-content th,
+.prose th {
+    background: var(--color-surface);
+    color: var(--color-accent);
+    font-family: var(--font-mono);
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.homepage-content td,
+.prose td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.homepage-content tr:hover,
+.prose tr:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
 /* --- RESPONSIVE --- */
 @media (min-width: 640px) {
     .sm\:text-7xl { font-size: 4.5rem; line-height: 1; }
