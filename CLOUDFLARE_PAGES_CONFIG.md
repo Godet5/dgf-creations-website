@@ -115,6 +115,7 @@ Godet5/
 | @ (root) | Main portfolio | dgf-creations | dgf-creations-website | DGF |
 | www | Redirect to root | dgf-creations | dgf-creations-website | DGF |
 | miketune | Client: Mike's Welding | miketune | miketune-platform | Client |
+| notary | Client: DeGode Notary | degode-notary-site | degode-notary-site | Client |
 | dev | Staging environment | dgf-creations-dev | dgf-creations-website (branch) | DGF |
 | api | Future API endpoint | (TBD) | (TBD) | DGF |
 | assets | Static CDN | (TBD) | (TBD) | DGF |
