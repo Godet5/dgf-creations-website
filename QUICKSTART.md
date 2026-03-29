@@ -1,6 +1,6 @@
 # DGF Creations Website - Quick Start
 
-**CRITICAL**: Use `hbuild`/`hserve` commands - Hugo requires `--noBuildLock` flag on Android/Termux
+**CRITICAL**: Hugo requires `--noBuildLock` flag on Android/Termux. Use the provided shell aliases or add the flag manually.
 
 ---
 
@@ -17,23 +17,21 @@ hserve
 hclean
 ```
 
-**Scripts**: `~/bin/hbuild`, `~/bin/hserve`, `~/bin/hclean`
-
 ---
 
 ## Manual Commands (if scripts unavailable)
 
 ```bash
 # Build
-cd /storage/emulated/0/DGF-Creations/website
+cd .
 hugo --minify --noBuildLock
 
 # Dev server
-cd /storage/emulated/0/DGF-Creations/website
+cd .
 hugo serve --bind 0.0.0.0 --noBuildLock
 
 # Clean
-cd /storage/emulated/0/DGF-Creations/website
+cd .
 rm -rf public resources .hugo_build.lock
 ```
 
@@ -55,5 +53,4 @@ See `CLAUDE.md` in this directory for complete setup, deployment, and customizat
 ---
 
 **Hugo Version**: v0.152.2+extended
-**Location**: `/storage/emulated/0/DGF-Creations/website/`
 **Live Site**: https://dgf-creations.com (when deployed)

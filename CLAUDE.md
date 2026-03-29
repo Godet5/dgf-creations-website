@@ -39,8 +39,7 @@ hclean
 # From any directory
 hbuild
 
-# Or manually:
-cd /storage/emulated/0/DGF-Creations/website
+# Or manually (from repo root):
 hugo --minify --noBuildLock
 
 # Output directory: ./public/
@@ -52,8 +51,7 @@ hugo --minify --noBuildLock
 # Start server
 hserve
 
-# Or manually:
-cd /storage/emulated/0/DGF-Creations/website
+# Or manually (from repo root):
 hugo serve --bind 0.0.0.0 --noBuildLock
 
 # Access at: http://localhost:1313
@@ -66,8 +64,7 @@ hugo serve --bind 0.0.0.0 --noBuildLock
 # Clean public/, resources/, and lock files
 hclean
 
-# Or manually:
-cd /storage/emulated/0/DGF-Creations/website
+# Or manually (from repo root):
 rm -rf public resources .hugo_build.lock
 ```
 
@@ -85,7 +82,7 @@ git push origin main
 npx wrangler pages deploy ./public --project-name=dgf-creations
 ```
 
-See `/storage/emulated/0/DGF-Creations/001-System/WEBSITE/DEPLOYMENT_AUTOMATION_GUIDE.md` for complete deployment setup.
+Deployment is automated via GitHub Actions (see `.github/workflows/deploy.yml`).
 
 ---
 
@@ -134,43 +131,6 @@ Key settings in `hugo.toml`:
 ### Interactive Project Demos
 
 Several projects include **web-based interactive demos** that will be embedded in the Hugo site:
-
-**Keystroke Symphony Web Demo**:
-- **Location**: `/storage/emulated/0/DGF-Creations/Creations/Keystroke-Symphony/keystroke-symphony/`
-- **Tech Stack**:
-  - **Backend**: Pyodide (Python in browser via WebAssembly)
-  - **Audio**: Web Audio API (oscillators, gain nodes, audio context)
-  - **Input**: JavaScript keyboard event listeners
-  - **UI**: HTML/CSS/Canvas for waveform visualization
-  - **Platform adapter**: `platforms/web.py` provides Web Audio engine
-- **Integration**: Embed as iframe or inline JavaScript in Hugo shortcode
-- **Files**:
-  - `app/index.html` - PWA launcher (mobile-first)
-  - `platforms/web.py` - WebAudioEngine, WebInputHandler classes
-  - `requirements_web.txt` - Pyodide dependencies (numpy)
-
-**Web Demo Architecture**:
-```
-HTML/CSS Frontend → JavaScript Keyboard Events → Pyodide (Python) →
-Web Audio API Synthesis → Canvas Visualization
-```
-
-**Embedding in Hugo**:
-Create shortcode in `themes/dgf-custom/layouts/shortcodes/keystroke-demo.html`:
-```html
-<div class="project-demo" id="keystroke-symphony">
-  <iframe src="/demos/keystroke-symphony/index.html"
-          width="100%" height="600px"
-          frameborder="0"></iframe>
-</div>
-```
-
-**Static Asset Management**:
-- Copy interactive demos to `static/demos/` during build
-- Serve via Cloudflare Pages as static assets
-- Pyodide loaded from CDN: `https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js`
-
-**Note**: For production, consider React version for better component architecture and state management (future enhancement).
 
 ---
 
@@ -400,30 +360,6 @@ Reusable components in `themes/dgf-custom/layouts/_partials/`:
 
 ---
 
-## Integration with DGF System
-
-### Parent Repository
-
-Website is part of larger DGF-Creations ecosystem:
-- **System docs**: `/storage/emulated/0/DGF-Creations/001-System/WEBSITE/`
-- **Planning docs**: `/storage/emulated/0/DGF-Creations/_recent_files/Website-Planning/`
-- **Launch plan**: See `PHASE_1_LAUNCH_PLAN.md` in system docs
-
-### Multi-Agent Coordination
-
-- **Claude (Code)**: Hugo implementation, deployment, API integration
-- **Gemini**: Theme design, security audit, compliance review
-- **ChatGPT**: Content creation, copywriting, UX review
-
-### Session Continuity
-
-Website work follows DGF session continuity protocol:
-- Handoffs created in `/storage/emulated/0/DGF-Creations/_recent_files/agent-handoffs/`
-- Check recent files before recreating work
-- Log significant changes in session tracking
-
----
-
 ## Future Enhancements (Post-Launch)
 
 Phase 1 focuses on static site. Future additions:
@@ -495,11 +431,6 @@ See `PHASE_1_LAUNCH_PLAN.md` for complete roadmap details.
 - [Hugo Documentation](https://gohugo.io/documentation/)
 - [Cloudflare Pages Docs](https://developers.cloudflare.com/pages/)
 - [Hugo Theme Components](https://gohugo.io/hugo-modules/theme-components/)
-
-**Internal**:
-- `/storage/emulated/0/DGF-Creations/001-System/WEBSITE/DEPLOYMENT_AUTOMATION_GUIDE.md` - Complete deployment setup
-- `/storage/emulated/0/DGF-Creations/001-System/WEBSITE/PHASE_1_LAUNCH_PLAN.md` - Launch roadmap
-- `/storage/emulated/0/DGF-Creations/001-System/DGF_MASTER_TELOS.md` - Strategic goals
 
 ---
 
